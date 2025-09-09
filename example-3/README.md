@@ -1,4 +1,4 @@
-# Week 07 - Example 03: Enhanced Monitoring for Product & Order Services
+# Week 09 - Example 03: Enhanced Monitoring for Product & Order Services
 
 ## Running Code
 
