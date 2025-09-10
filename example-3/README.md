@@ -1,4 +1,4 @@
-# Week 07 - Example 03: Enhanced Monitoring for Product & Order Services
+# Week 09 - Example 03: Enhanced Monitoring for Product & Order Services
 
 ## Running Code
 
@@ -31,9 +31,11 @@
 
 Navigate to your `week09/example-3/k8s` directory in your terminal.
 
-- Deploy Databases:
+- Deploy Secrets & Databases:
 
   ```bash
+  kubectl apply -f secrets.yaml
+  kubectl apply -f configmaps.yaml
   kubectl apply -f product-db.yaml
   kubectl apply -f order-db.yaml
   ```

@@ -18,11 +18,11 @@ spec:
       annotations:
         prometheus.io/scrape: 'true' # Instruct Prometheus to scrape this pod
         prometheus.io/path: '/metrics' # The path where metrics are exposed
-        prometheus.io/port: '8001' # The port where metrics are exposed on the container
+        prometheus.io/port: '8000' # The port where metrics are exposed on the container
     spec:
       containers:
       - name: order-service-container
-        image: AZURE_CONTAINER_REGISTRY/order_service:latest
+        image: <AZURE_ACR>/order:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8001
