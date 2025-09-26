@@ -1,0 +1,13 @@
+name: reusable-ci (basic)
+
+on:
+  workflow_call:
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sanity check
+        run: |
+          echo "✅ Reusable CI ran on $GITHUB_REF from $GITHUB_REPOSITORY"
