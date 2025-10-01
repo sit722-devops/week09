@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: product-service-container
-        image: AZURE_CONTAINER_REGISTRY/product_service:latest
+        image: himanshudhakaw09acr10504.azurecr.io/backend-product:week09
         imagePullPolicy: Always
         ports:
         - containerPort: 8000

@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: order-service-container
-        image: <AZURE_ACR>/order:latest
+        image: himanshudhakaw09acr10504.azurecr.io/backend-order:week09
         imagePullPolicy: Always
         ports:
         - containerPort: 8001
