@@ -1,0 +1,20 @@
+name: PR CI (basic)
+
+on:
+  pull_request:
+    branches: [ dev, main ]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:                       # <-- Job ID is 'ci' to get the check name you need
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Tiny sanity step – replace with real unit tests later if you like
+      - name: Sanity check
+        run: |
+          echo "Repo: $GITHUB_REPOSITORY"
+          echo "PR:   $GITHUB_HEAD_REF -> $GITHUB_BASE_REF"
